@@ -1,0 +1,154 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": {
+        "en": "Rama Navami",
+        "hi": "राम नवमी",
+        "kn": "ರಾಮ ನವಮಿ",
+        "te": "రామ నవమి"
+      },
+      "description": {
+        "en": "Celebration of Lord Rama's birth, featuring special pujas, bhajans, and prasad distribution",
+        "hi": "भगवान राम के जन्म का उत्सव, विशेष पूजा, भजन और प्रसाद वितरण के साथ",
+        "kn": "ಭಗವಾನ ರಾಮನ ಜನ್ಮದ ಆಚರಣೆ, ವಿಶೇಷ ಪೂಜೆ, ಭಜನೆ ಮತ್ತು ಪ್ರಸಾದ ವಿತರಣೆ",
+        "te": "ఆ రామ జన్మ సంబరణ, ప్రత్యేక పూజలు, భజనలు మరియు ప్రసాద పంపిణీ"
+      },
+      "date": "2026-04-21",
+      "time": "06:00 AM",
+      "duration": "3 hours",
+      "location": {
+        "en": "Main Temple",
+        "hi": "मुख्य मंदिर",
+        "kn": "ಮುಖ್ಯ ದೇವಾಲಯ",
+        "te": "ప్రధాన ఆలయం"
+      },
+      "category": "puja"
+    },
+    {
+      "id": 2,
+      "name": {
+        "en": "Hanuman Jayanti",
+        "hi": "हनुमान जयंती",
+        "kn": "ಹನುಮಾನ ಜಯಂತಿ",
+        "te": "హనుమాన్ జయంతి"
+      },
+      "description": {
+        "en": "Celebration of Lord Hanuman's birth with special rituals and devotional singing",
+        "hi": "भगवान हनुमान के जन्म का उत्सव विशेष अनुष्ठान और भक्ति गीत के साथ",
+        "kn": "ಭಗವಾನ ಹನುಮಾನ ಜನ್ಮದ ಆಚರಣೆ ವಿಶೇಷ ಆಚರಣೆ ಮತ್ತು ಭಕ್ತಿ ಗೀತೆ",
+        "te": "ఆ హనుమాన్ జన్మ సంబరణ ప్రత్యేక ఆచారాలు మరియు భక్తి గీతలు"
+      },
+      "date": "2026-05-06",
+      "time": "05:30 AM",
+      "duration": "2.5 hours",
+      "location": {
+        "en": "Main Temple",
+        "hi": "मुख्य मंदिर",
+        "kn": "ಮುಖ್ಯ ದೇವಾಲಯ",
+        "te": "ప్రధాన ఆలయం"
+      },
+      "category": "puja"
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "Dattatreya Jayanti",
+        "hi": "दत्तात्रेय जयंती",
+        "kn": "ದತ್ತಾತ್ರೇಯ ಜಯಂತಿ",
+        "te": "దత్తాత్రేయ జయంతి"
+      },
+      "description": {
+        "en": "Grand celebration of Lord Dattatreya's birth with special homam, pujas, and spiritual discourse",
+        "hi": "भगवान दत्तात्रेय के जन्म का भव्य उत्सव विशेष होम, पूजा और आध्यात्मिक प्रवचन के साथ",
+        "kn": "ಭಗವಾನ ದತ್ತಾತ್ರೇಯ ಜನ್ಮದ ಭವ್ಯ ಆಚರಣೆ ವಿಶೇಷ ಹೋಮ, ಪೂಜೆ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಪ್ರವಚನ",
+        "te": "ఆ దత్తాత్రేయ జన్మ గ్రాండ్ సంబరణ ప్రత్యేక హోమ, పూజలు మరియు ఆధ్యాత్మిక ప్రవచనలు"
+      },
+      "date": "2026-06-15",
+      "time": "04:00 AM",
+      "duration": "5 hours",
+      "location": {
+        "en": "Main Temple & Grounds",
+        "hi": "मुख्य मंदिर और परिसर",
+        "kn": "ಮುಖ್ಯ ದೇವಾಲಯ ಮತ್ತು ಮೈದಾನ",
+        "te": "ప్రధాన ఆలయం మరియు గ్రౌండ్‌లు"
+      },
+      "category": "festival"
+    },
+    {
+      "id": 4,
+      "name": {
+        "en": "Krishna Janmashtami",
+        "hi": "कृष्ण जन्माष्टमी",
+        "kn": "ಕೃಷ್ಣ ಜನ್ಮಾಷ್ಟಮಿ",
+        "te": "కృష్ణ జన్మాష్టమి"
+      },
+      "description": {
+        "en": "Celebration of Lord Krishna's birth with midnight rituals, bhajans, and cultural programs",
+        "hi": "भगवान कृष्ण के जन्म का उत्सव मध्यरात्रि अनुष्ठान, भजन और सांस्कृतिक कार्यक्रमों के साथ",
+        "kn": "ಭಗವಾನ ಕೃಷ್ಣ ಜನ್ಮದ ಆಚರಣೆ ಮಧ್ಯರಾತ್ರಿ ಆಚರಣೆ, ಭಜನೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+        "te": "ఆ కృష్ణ జన్మ సంబరణ మధ్యరాత్రి ఆచారాలు, భజనలు మరియు సాంస్కృతిక కార్యక్రమాలు"
+      },
+      "date": "2026-08-23",
+      "time": "11:00 PM",
+      "duration": "4 hours",
+      "location": {
+        "en": "Main Temple",
+        "hi": "मुख्य मंदिर",
+        "kn": "ಮುಖ್ಯ ದೇವಾಲಯ",
+        "te": "ప్రధాన ఆలయం"
+      },
+      "category": "puja"
+    },
+    {
+      "id": 5,
+      "name": {
+        "en": "Navaratri Festival",
+        "hi": "नवरात्रि महोत्सव",
+        "kn": "ನವರಾತ್ರಿ ಉತ್ಸವ",
+        "te": "నవరాత్రి ఉత్సవం"
+      },
+      "description": {
+        "en": "Nine-day celebration of Goddess Durga with daily pujas, Garbha, Dandiya, and cultural programs",
+        "hi": "देवी दुर्गा का नौ दिन का उत्सव दैनिक पूजा, गरबा, डांडिया और सांस्कृतिक कार्यक्रमों के साथ",
+        "kn": "ದೇವಿ ದುರ್ಗೆಯ ಒಂಬತ್ತು ದಿನದ ಉತ್ಸವ ದೈನಿಕ ಪೂಜೆ, ಗರ್ಬ, ಡಾಂಡಿಯ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು",
+        "te": "దేవి దుర్గ యొక్క తొమ్మిది రోజుల ఉత్సవం దైనిక పూజలు, గర్బ, డాండియ మరియు సాంస్కృతిక కార్యక్రమాలు"
+      },
+      "date": "2026-09-22",
+      "time": "06:00 AM",
+      "duration": "9 days",
+      "location": {
+        "en": "Main Temple & Grounds",
+        "hi": "मुख्य मंदिर और परिसर",
+        "kn": "ಮುಖ್ಯ ದೇವಾಲಯ ಮತ್ತು ಮೈದಾನ",
+        "te": "ప్రధాన ఆలయం మరియు గ్రౌండ్‌లు"
+      },
+      "category": "festival"
+    },
+    {
+      "id": 6,
+      "name": {
+        "en": "Diwali - Festival of Lights",
+        "hi": "दिवाली - प्रकाश का त्योहार",
+        "kn": "ದೀಪಾವಳಿ - ಬೆಳಕಿನ ಉತ್ಸವ",
+        "te": "దీపావళి - కాంతి ఉత్సవం"
+      },
+      "description": {
+        "en": "Grand celebration of victory of light over darkness with special pujas, fireworks, and community feast",
+        "hi": "प्रकाश की अंधकार पर विजय का भव्य उत्सव विशेष पूजा, आतिशबाजी और सामुदायिक भोज के साथ",
+        "kn": "ಬೆಳಕಿನ ಅಂಧಕಾರದ ಮೇಲೆ ವಿಜಯದ ಭವ್ಯ ಆಚರಣೆ ವಿಶೇಷ ಪೂಜೆ, ಪಟಾಕಿ ಮತ್ತು ಸಮುದಾಯ ಭೋಜನ",
+        "te": "కాంతి యొక్క చీకటిపై విజయం యొక్క గ్రాండ్ సెలिব్రేషన్ ప్రత్యేక పూజలు, పటాకులు మరియు సమాజ విందు"
+      },
+      "date": "2026-10-29",
+      "time": "06:00 AM",
+      "duration": "2 days",
+      "location": {
+        "en": "Main Temple & Grounds",
+        "hi": "मुख्य मंदिर और परिसर",
+        "kn": "ಮುಖ್ಯ ದೇವಾಲಯ ಮತ್ತು ಮೈದಾನ",
+        "te": "ప్రధాన ఆలయం మరియు గ్రౌండ్‌లు"
+      },
+      "category": "festival"
+    }
+  ]
+}

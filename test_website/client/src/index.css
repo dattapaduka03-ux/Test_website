@@ -1,0 +1,449 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Vedic Minimalism: Traditional Hindu Aesthetic */
+  /* Primary Saffron - spiritual fire and transformation */
+  --primary: #ff901c;
+  --primary-foreground: #FFFAF0;
+  --sidebar-primary: #ffc61d;
+  --sidebar-primary-foreground: #111827;
+  
+  /* Gradient colors: Tree Poppy, Lightning Yellow, Orange (removed Macaroni and Cheese) */
+  --gradient-start: #FB8F1C;
+  --gradient-mid: #FB6922;
+  --gradient-end: #FCBB16;
+  --gradient-accent: #FB8F1C;
+  
+  /* Accent Gold - divinity and enlightenment */
+  --chart-1: #D4AF37;
+  --chart-2: #E6C200;
+  --chart-3: #C9A961;
+  --chart-4: #B8860B;
+  --chart-5: #A67C52;
+  
+  --radius: 0.5rem;
+  
+  /* Background: Cream for meditative space */
+  --background: #F5E6D3;
+  --foreground: #111827;
+  --card: #FFFAF0;
+  --card-foreground: #111827;
+  --popover: #FFFAF0;
+  --popover-foreground: #111827;
+  
+  /* Secondary: Warm whites and soft neutrals */
+  --secondary: #FFFAF0;
+  --secondary-foreground: #111827;
+  --muted: #E8DCC8;
+  --muted-foreground: #666666;
+  
+  /* Accent: Burnished gold */
+  --accent: #D4AF37;
+  --accent-foreground: #111827;
+  
+  --destructive: #C41E3A;
+  --destructive-foreground: #FFFAF0;
+  
+  --border: #E0D5C7;
+  --input: #FFFAF0;
+  --ring: #ff901c;
+  
+  --sidebar: #FFFAF0;
+  --sidebar-foreground: #111827;
+  --sidebar-accent: #ff901c;
+  --sidebar-accent-foreground: #FFFAF0;
+  --sidebar-border: #E0D5C7;
+  --sidebar-ring: #ff901c;
+}
+
+.dark {
+  /* Dark mode: Deep saffron and gold with dark backgrounds */
+  --primary: #ffc61d;
+  --primary-foreground: #111827;
+  --sidebar-primary: #ff901c;
+  --sidebar-primary-foreground: #FFFAF0;
+  
+  --background: #1A1410;
+  --foreground: #E8DCC8;
+  --card: #2C2420;
+  --card-foreground: #E8DCC8;
+  --popover: #2C2420;
+  --popover-foreground: #E8DCC8;
+  
+  --secondary: #3A3530;
+  --secondary-foreground: #D0C4B8;
+  --muted: #4A4540;
+  --muted-foreground: #A89E92;
+  
+  --accent: #D4AF37;
+  --accent-foreground: #111827;
+  
+  --destructive: #E74C3C;
+  --destructive-foreground: #FFFAF0;
+  
+  --border: #3A3530;
+  --input: #2C2420;
+  --ring: #ffc61d;
+  
+  --sidebar: #2C2420;
+  --sidebar-foreground: #E8DCC8;
+  --sidebar-accent: #ff901c;
+  --sidebar-accent-foreground: #FFFAF0;
+  --sidebar-border: #3A3530;
+  --sidebar-ring: #ffc61d;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    color: var(--primary);
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+  }
+  
+  h3 {
+    font-size: 1.875rem;
+    color: var(--primary);
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    color: var(--foreground);
+  }
+  
+  blockquote {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 1.125rem;
+    border-left: 4px solid var(--primary);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--foreground);
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Gradient Background: Orange to Yellow with silky shine effect
+   * Creates a premium, elegant appearance with glossy finish
+   */
+  .gradient-primary {
+    background: linear-gradient(180deg, #FB8F1C 0%, #FB6922 50%, #FCBB16 100%);
+    background-attachment: fixed;
+    box-shadow: 0 4px 15px rgba(251, 143, 28, 0.3);
+  }
+
+  .gradient-primary-shiny {
+    background: linear-gradient(180deg, #FB8F1C 0%, #FB6922 50%, #FCBB16 100%);
+    background-attachment: fixed;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(251, 143, 28, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .gradient-primary-shiny::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  /* Silky shine effect for buttons and interactive elements */
+  .shine-effect {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(251, 143, 28, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+
+  .shine-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    animation: shine 2.5s infinite;
+  }
+
+  @keyframes shine {
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: 100%; }
+  }
+
+
+
+
+
+  /* Spiritual Section Background */
+  .spiritual-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .spiritual-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(251, 143, 28, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(251, 105, 34, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 50% 0%, rgba(252, 187, 22, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .spiritual-section > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Enhanced Typography for Spiritual Feel */
+  .spiritual-heading {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  /* Decorative Quote Style */
+  .spiritual-quote {
+    border-left: 4px solid var(--primary);
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: var(--foreground);
+    margin: 2rem 0;
+  }
+
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+}
+/* Scroll Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scroll Animation Utility Classes */
+.scroll-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.scroll-fade-in-down {
+  opacity: 0;
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.scroll-fade-in-left {
+  opacity: 0;
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.scroll-fade-in-right {
+  opacity: 0;
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+.scroll-scale-in {
+  opacity: 0;
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-500 { animation-delay: 0.5s; }

@@ -1,0 +1,510 @@
+{
+  "en": {
+    "nav": {
+      "home": "HOME",
+      "guru": "GURU PARAMPARA",
+      "sevas": "SEVAS",
+      "activities": "ACTIVITIES",
+      "gallery": "GALLERY",
+      "trust": "TRUST",
+      "sthala": "STHALA PURANAM",
+      "events": "EVENTS",
+      "contact": "CONTACT US"
+    },
+    "hero": {
+      "title": "Sri Avimuktha",
+      "subtitle": "DATTA KSHETRAM",
+      "desc1": "Srimad Adiguru Dattatreya Paramparanugatha Pranava Peeta Nirguna Maha Samsthanam",
+      "desc2": "Srimad Dattatreya Ashrama Prarthana Mandiram",
+      "desc3": "Sadguru Sree Sree Sree Ramananda Swamy Ashrama Vishwastha Samithi ®",
+      "desc4": "Historical Saptapuri Nagara or Navasaala Nagari – Hosakote",
+      "cta": "SCROLL NOW"
+    },
+    "about": {
+      "title": "About the Ashram",
+      "content": "Sri Avimuktha Datta Kshetram is a sacred spiritual center dedicated to the teachings of Lord Dattatreya. Our ashram serves as a beacon of spiritual wisdom, offering guidance and solace to seekers on their path to enlightenment."
+    },
+    "guru": {
+      "title": "Guru Parampara",
+      "content": "The lineage of great masters continues through generations, preserving the sacred teachings and spiritual practices that guide us toward liberation.",
+      "list": [
+        "Adi Guru Dathathtreya Prabhu",
+        "Sri Yogi Janaardhana Swamy",
+        "Sri Konera Guru Swamy",
+        "Sri Eko Guruvara Swamy",
+        "Sri Narahari Mahesha Swamy",
+        "Sri Nagoraama Swamy",
+        "Sri Mahadeva Guru Swamy",
+        "Sri Parashuraama Prabhu",
+        "Sri Dhenukonda Thimma Yogi",
+        "Sri Chintala Lingananda Swami",
+        "Sri Sahajananda Swami",
+        "Sri Mahalinga Rangaswamy",
+        "Sri Sankarananda Swami",
+        "Shri Govindarya Swamy",
+        "Sri Krishnananda Swami",
+        "Sri Ramananda Swami",
+        "Sri Madhavananda Swami",
+        "Sri Mathe Muktambicay Devi"
+      ]
+    },
+    "sevas": {
+      "title": "Sevas",
+      "content": "We offer various spiritual services including daily pujas, homams, and meditation sessions to support the spiritual growth of our devotees.",
+      "list": [
+        "Sri Guru Puja on Purnima Day",
+        "Sri Dathathreya Homam",
+        "Sri Sadguru Pada Puja",
+        "Anna Prasada Seva",
+        "Pushpa Puja",
+        "Deeparadhana",
+        "Naivedhyam",
+        "Thulabharam",
+        "Rudrabhishekam",
+        "Pradosha puja",
+        "Sri Guru Charithra Grantha Parayana Samarpana",
+        "Avimuktha Datta Paaduka Puja",
+        "Avimuktha Datta Paaduka Abhishekam",
+        "Palaki Seva",
+        "Sri Kathaveeryarjuna Puja",
+        "Sri Karthaveeryarjuna Homam",
+        "Sri Avadhootaroopa Subrahmanya Swamy Puja",
+        "Sri Subrahmanya Homam",
+        "Sri Datta Sahasranama Paarayana",
+        "Sri Avadhootha Geetha Parayanam",
+        "Sri Oudumbara Vruksha Puja"
+      ]
+    },
+    "activities": {
+      "title": "Activities",
+      "content": "Our ashram organizes regular spiritual activities, festivals, and educational programs to foster spiritual development and community engagement.",
+      "list": [
+        "ANNADHAANAM",
+        "VIDHYADHAANAM",
+        "VASTRADHAANAM",
+        "AROGYADHAANAM",
+        "GNANADHAANAM",
+        "PRAKRUTHI VANDANAM",
+        "KAALAGNAANAM",
+        "GOURAVA PRADHAANAM"
+      ]
+    },
+    "gallery": {
+      "title": "Gallery",
+      "content": "Explore the sacred spaces and spiritual moments captured within our ashram."
+    },
+    "trust": {
+      "title": "Trust",
+      "content": "Built on principles of transparency and devotion, our trust works towards the welfare and spiritual upliftment of all seekers."
+    },
+    "sthala": {
+      "title": "Sthala Puranam",
+      "content": "The sacred history and significance of this holy place, steeped in spiritual tradition and divine grace."
+    },
+    "events": {
+      "title": "Events & Festivals",
+      "content": "Explore our upcoming pujas, homams, and festivals celebrating the divine teachings and spiritual practices of Lord Dattatreya.",
+      "upcomingEvents": "Upcoming Events",
+      "date": "Date",
+      "time": "Time",
+      "duration": "Duration",
+      "location": "Location",
+      "category": "Category",
+      "details": "Event Details"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "newsletter": "Newsletter",
+      "subscribe": "Subscribe",
+      "subscribeText": "Subscribe to our newsletter for updates and spiritual insights."
+    },
+    "footer": {
+      "copyright": "© 2015-2026 AVIMUKTHA DATTA PAADUKA. All Rights Reserved.",
+      "organization": "Sadguru Sree Sree Sree Ramananda Swamy Ashrama Vishwasta Samithi (R)"
+    }
+  },
+  "hi": {
+    "nav": {
+      "home": "होम",
+      "guru": "गुरु परंपरा",
+      "sevas": "सेवाएं",
+      "activities": "गतिविधियां",
+      "gallery": "गैलरी",
+      "trust": "ट्रस्ट",
+      "sthala": "स्थल पुराण",
+      "events": "कार्यक्रम",
+      "contact": "हमसे संपर्क करें"
+    },
+    "hero": {
+      "title": "श्री अविमुक्त",
+      "subtitle": "दत्त क्षेत्रम्",
+      "desc1": "श्रीमद् आदिगुरु दत्तात्रेय परंपरानुगत प्रणव पीठ निर्गुण महा संस्थानम्",
+      "desc2": "श्रीमद् दत्तात्रेय आश्रम प्रार्थना मंदिरम्",
+      "desc3": "सद्गुरु श्री श्री श्री रामानंद स्वामी आश्रम विश्वस्त समिति ®",
+      "desc4": "ऐतिहासिक सप्तपुरी नगर या नवसाल नगरी – होसकोटे",
+      "cta": "अब स्क्रॉल करें"
+    },
+    "about": {
+      "title": "आश्रम के बारे में",
+      "content": "श्री अविमुक्त दत्त क्षेत्रम् भगवान दत्तात्रेय की शिक्षाओं को समर्पित एक पवित्र आध्यात्मिक केंद्र है। हमारा आश्रम आध्यात्मिक ज्ञान का प्रकाश स्तंभ है, जो मोक्ष के मार्ग पर साधकों को मार्गदर्शन और सांत्वना प्रदान करता है।"
+    },
+    "guru": {
+      "title": "गुरु परंपरा",
+      "content": "महान गुरुओं की परंपरा पीढ़ियों के माध्यम से जारी रहती है, पवित्र शिक्षाओं और आध्यात्मिक प्रथाओं को संरक्षित करते हुए जो हमें मुक्ति की ओर निर्देशित करती हैं।",
+      "list": [
+        "Adi Guru Dathathtreya Prabhu",
+        "Sri Yogi Janaardhana Swamy",
+        "Sri Konera Guru Swamy",
+        "Sri Eko Guruvara Swamy",
+        "Sri Narahari Mahesha Swamy",
+        "Sri Nagoraama Swamy",
+        "Sri Mahadeva Guru Swamy",
+        "Sri Parashuraama Prabhu",
+        "Sri Dhenukonda Thimma Yogi",
+        "Sri Chintala Lingananda Swami",
+        "Sri Sahajananda Swami",
+        "Sri Mahalinga Rangaswamy",
+        "Sri Sankarananda Swami",
+        "Shri Govindarya Swamy",
+        "Sri Krishnananda Swami",
+        "Sri Ramananda Swami",
+        "Sri Madhavananda Swami",
+        "Sri Mathe Muktambicay Devi"
+      ]
+    },
+    "sevas": {
+      "title": "सेवाएं",
+      "content": "हम दैनिक पूजा, होम और ध्यान सत्र सहित विभिन्न आध्यात्मिक सेवाएं प्रदान करते हैं जो हमारे भक्तों के आध्यात्मिक विकास का समर्थन करती हैं।",
+      "list": [
+        "Sri Guru Puja on Purnima Day",
+        "Sri Dathathreya Homam",
+        "Sri Sadguru Pada Puja",
+        "Anna Prasada Seva",
+        "Pushpa Puja",
+        "Deeparadhana",
+        "Naivedhyam",
+        "Thulabharam",
+        "Rudrabhishekam",
+        "Pradosha puja",
+        "Sri Guru Charithra Grantha Parayana Samarpana",
+        "Avimuktha Datta Paaduka Puja",
+        "Avimuktha Datta Paaduka Abhishekam",
+        "Palaki Seva",
+        "Sri Kathaveeryarjuna Puja",
+        "Sri Karthaveeryarjuna Homam",
+        "Sri Avadhootaroopa Subrahmanya Swamy Puja",
+        "Sri Subrahmanya Homam",
+        "Sri Datta Sahasranama Paarayana",
+        "Sri Avadhootha Geetha Parayanam",
+        "Sri Oudumbara Vruksha Puja"
+      ]
+    },
+    "activities": {
+      "title": "गतिविधियां",
+      "content": "हमारा आश्रम नियमित आध्यात्मिक गतिविधियों, त्योहारों और शैक्षणिक कार्यक्रमों का आयोजन करता है जो आध्यात्मिक विकास और सामुदायिक संलग्नता को बढ़ावा देते हैं।",
+      "list": [
+        "ANNADHAANAM",
+        "VIDHYADHAANAM",
+        "VASTRADHAANAM",
+        "AROGYADHAANAM",
+        "GNANADHAANAM",
+        "PRAKRUTHI VANDANAM",
+        "KAALAGNAANAM",
+        "GOURAVA PRADHAANAM"
+      ]
+    },
+    "gallery": {
+      "title": "गैलरी",
+      "content": "हमारे आश्रम के भीतर कैद की गई पवित्र जगहों और आध्यात्मिक क्षणों का अन्वेषण करें।"
+    },
+    "trust": {
+      "title": "ट्रस्ट",
+      "content": "पारदर्शिता और भक्ति के सिद्धांतों पर निर्मित, हमारा ट्रस्ट सभी साधकों के कल्याण और आध्यात्मिक उत्थान के लिए काम करता है।"
+    },
+    "sthala": {
+      "title": "स्थल पुराण",
+      "content": "इस पवित्र स्थान का पवित्र इतिहास और महत्व, आध्यात्मिक परंपरा और दिव्य कृपा में निहित है।"
+    },
+    "events": {
+      "title": "कार्यक्रम और त्योहार",
+      "content": "हमारे आने वाले पूजा, होम और त्योहारों का अन्वेषण करें जो भगवान दत्तात्रेय की दिव्य शिक्षाओं और आध्यात्मिक प्रथाओं का जश्न मनाते हैं।",
+      "upcomingEvents": "आने वाले कार्यक्रम",
+      "date": "तारीख",
+      "time": "समय",
+      "duration": "अवधि",
+      "location": "स्थान",
+      "category": "श्रेणी",
+      "details": "कार्यक्रम विवरण"
+    },
+    "contact": {
+      "title": "हमसे संपर्क करें",
+      "email": "ईमेल",
+      "phone": "फोन",
+      "address": "पता",
+      "newsletter": "समाचार पत्र",
+      "subscribe": "सदस्यता लें",
+      "subscribeText": "अपडेट और आध्यात्मिक अंतर्दृष्टि के लिए हमारे न्यूजलेटर की सदस्यता लें।"
+    },
+    "footer": {
+      "copyright": "© 2015-2026 अविमुक्त दत्त पादुका। सर्वाधिकार सुरक्षित।",
+      "organization": "सद्गुरु श्री श्री श्री रामानंद स्वामी आश्रम विश्वस्त समिति (R)"
+    }
+  },
+  "kn": {
+    "nav": {
+      "home": "ಹೋಮ್",
+      "guru": "ಗುರು ಪರಂಪರೆ",
+      "sevas": "ಸೇವೆಗಳು",
+      "activities": "ಚಟುವಟಿಕೆಗಳು",
+      "gallery": "ಗ್ಯಾಲರಿ",
+      "trust": "ಟ್ರಸ್ಟ್",
+      "sthala": "ಸ್ಥಳ ಪುರಾಣ",
+      "events": "ಕಾರ್ಯಕ್ರಮಗಳು",
+      "contact": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ"
+    },
+    "hero": {
+      "title": "ಶ್ರೀ ಅವಿಮುಕ್ತ",
+      "subtitle": "ದತ್ತ ಕ್ಷೇತ್ರ",
+      "desc1": "ಶ್ರೀಮದ್ ಆದಿಗುರು ದತ್ತಾತ್ರೇಯ ಪರಂಪರಾನುಗತ ಪ್ರಣವ ಪೀಠ ನಿರ್ಗುಣ ಮಹಾ ಸಂಸ್ಥಾನಮ್",
+      "desc2": "ಶ್ರೀಮದ್ ದತ್ತಾತ್ರೇಯ ಆಶ್ರಮ ಪ್ರಾರ್ಥನೆ ಮಂದಿರ",
+      "desc3": "ಸದ್ಗುರು ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ರಾಮಾನಂದ ಸ್ವಾಮಿ ಆಶ್ರಮ ವಿಶ್ವಸ್ತ ಸಮಿತಿ ®",
+      "desc4": "ಐತಿಹಾಸಿಕ ಸಪ್ತಪುರಿ ನಗರ ಅಥವಾ ನವಸಾಲ ನಗರಿ – ಹೋಸಕೋಟೆ",
+      "cta": "ಈಗ ಸ್ಕ್ರೋಲ್ ಮಾಡಿ"
+    },
+    "about": {
+      "title": "ಆಶ್ರಮದ ಬಗ್ಗೆ",
+      "content": "ಶ್ರೀ ಅವಿಮುಕ್ತ ದತ್ತ ಕ್ಷೇತ್ರ ಭಗವಾನ್ ದತ್ತಾತ್ರೇಯನ ಶಿಕ್ಷೆಗಳಿಗೆ ಸಮರ್ಪಿತ ಪವಿತ್ರ ಆಧ್ಯಾತ್ಮಿಕ ಕೇಂದ್ರವಾಗಿದೆ. ನಮ್ಮ ಆಶ್ರಮ ಆಧ್ಯಾತ್ಮಿಕ ಜ್ಞಾನದ ಮಾರ್ಗದರ್ಶಕ ಬೆಳಕಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ, ಮೋಕ್ಷದ ಮಾರ್ಗದಲ್ಲಿ ಸಾಧಕರಿಗೆ ಮಾರ್ಗದರ್ಶನ ಮತ್ತು ಸಾಂತ್ವನೆ ನೀಡುತ್ತದೆ."
+    },
+    "guru": {
+      "title": "ಗುರು ಪರಂಪರೆ",
+      "content": "ಮಹಾನ್ ಗುರುಗಳ ಪರಂಪರೆ ಪೀಳಿಗಳ ಮೂಲಕ ಮುಂದುವರಿಯುತ್ತದೆ, ಪವಿತ್ರ ಶಿಕ್ಷೆಗಳು ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಅಭ್ಯಾಸಗಳನ್ನು ಸಂರಕ್ಷಿಸುತ್ತದೆ ಅದು ನಮ್ಮನ್ನು ಮುಕ್ತಿಯ ಕಡೆಗೆ ಮಾರ್ಗದರ್ಶನ ಮಾಡುತ್ತದೆ.",
+      "list": [
+        "Adi Guru Dathathtreya Prabhu",
+        "Sri Yogi Janaardhana Swamy",
+        "Sri Konera Guru Swamy",
+        "Sri Eko Guruvara Swamy",
+        "Sri Narahari Mahesha Swamy",
+        "Sri Nagoraama Swamy",
+        "Sri Mahadeva Guru Swamy",
+        "Sri Parashuraama Prabhu",
+        "Sri Dhenukonda Thimma Yogi",
+        "Sri Chintala Lingananda Swami",
+        "Sri Sahajananda Swami",
+        "Sri Mahalinga Rangaswamy",
+        "Sri Sankarananda Swami",
+        "Shri Govindarya Swamy",
+        "Sri Krishnananda Swami",
+        "Sri Ramananda Swami",
+        "Sri Madhavananda Swami",
+        "Sri Mathe Muktambicay Devi"
+      ]
+    },
+    "sevas": {
+      "title": "ಸೇವೆಗಳು",
+      "content": "ನಾವು ದೈನಂದಿನ ಪೂಜೆಗಳು, ಹೋಮಗಳು ಮತ್ತು ಧ್ಯಾನ ಸೆಷನ್‌ಗಳನ್ನು ಒಳಗೊಂಡಿರುವ ವಿವಿಧ ಆಧ್ಯಾತ್ಮಿಕ ಸೇವೆಗಳನ್ನು ನೀಡುತ್ತೇವೆ ಅದು ನಮ್ಮ ಭಕ್ತರ ಆಧ್ಯಾತ್ಮಿಕ ಬೆಳವಣಿಗೆಯನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.",
+      "list": [
+        "Sri Guru Puja on Purnima Day",
+        "Sri Dathathreya Homam",
+        "Sri Sadguru Pada Puja",
+        "Anna Prasada Seva",
+        "Pushpa Puja",
+        "Deeparadhana",
+        "Naivedhyam",
+        "Thulabharam",
+        "Rudrabhishekam",
+        "Pradosha puja",
+        "Sri Guru Charithra Grantha Parayana Samarpana",
+        "Avimuktha Datta Paaduka Puja",
+        "Avimuktha Datta Paaduka Abhishekam",
+        "Palaki Seva",
+        "Sri Kathaveeryarjuna Puja",
+        "Sri Karthaveeryarjuna Homam",
+        "Sri Avadhootaroopa Subrahmanya Swamy Puja",
+        "Sri Subrahmanya Homam",
+        "Sri Datta Sahasranama Paarayana",
+        "Sri Avadhootha Geetha Parayanam",
+        "Sri Oudumbara Vruksha Puja"
+      ]
+    },
+    "activities": {
+      "title": "ಚಟುವಟಿಕೆಗಳು",
+      "content": "ನಮ್ಮ ಆಶ್ರಮ ನಿಯಮಿತ ಆಧ್ಯಾತ್ಮಿಕ ಚಟುವಟಿಕೆಗಳು, ಹಬ್ಬಗಳು ಮತ್ತು ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಆಯೋಜಿಸುತ್ತದೆ ಅದು ಆಧ್ಯಾತ್ಮಿಕ ಬೆಳವಣಿಗೆ ಮತ್ತು ಸಮುದಾಯ ಸಂಪೃಕ್ತತೆಯನ್ನು ಉತ್ತೇಜಿಸುತ್ತದೆ.",
+      "list": [
+        "ANNADHAANAM",
+        "VIDHYADHAANAM",
+        "VASTRADHAANAM",
+        "AROGYADHAANAM",
+        "GNANADHAANAM",
+        "PRAKRUTHI VANDANAM",
+        "KAALAGNAANAM",
+        "GOURAVA PRADHAANAM"
+      ]
+    },
+    "gallery": {
+      "title": "ಗ್ಯಾಲರಿ",
+      "content": "ನಮ್ಮ ಆಶ್ರಮದೊಳಗೆ ಸೆರೆಹಿಡಿದ ಪವಿತ್ರ ಸ್ಥಳಗಳು ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಕ್ಷಣಗಳನ್ನು ಅನ್ವೇಷಿಸಿ."
+    },
+    "trust": {
+      "title": "ಟ್ರಸ್ಟ್",
+      "content": "ಪಾರದರ್ಶಕತೆ ಮತ್ತು ಭಕ್ತಿಯ ತತ್ವಗಳ ಮೇಲೆ ನಿರ್ಮಿತ, ನಮ್ಮ ಟ್ರಸ್ಟ್ ಎಲ್ಲಾ ಸಾಧಕರ ಕಲ್ಯಾಣ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಉತ್ಥಾನದ ಕಡೆಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ."
+    },
+    "sthala": {
+      "title": "ಸ್ಥಳ ಪುರಾಣ",
+      "content": "ಈ ಪವಿತ್ರ ಸ್ಥಳದ ಪವಿತ್ರ ಇತಿಹಾಸ ಮತ್ತು ಮಹತ್ವ, ಆಧ್ಯಾತ್ಮಿಕ ಸಂಪ್ರದಾಯ ಮತ್ತು ದೈವಿಕ ಕೃಪೆಯಲ್ಲಿ ನೆಲೆಗೊಂಡಿದೆ."
+    },
+    "events": {
+      "title": "ಕಾರ್ಯಕ್ರಮಗಳು ಮತ್ತು ಹಬ್ಬಗಳು",
+      "content": "ಭಗವಾನ ದತ್ತಾತ್ರೇಯನ ದೈವಿಕ ಶಿಕ್ಷೆಗಳು ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಅಭ್ಯಾಸಗಳನ್ನು ಆಚರಿಸುವ ನಮ್ಮ ಮುಂಬರುವ ಪೂಜೆಗಳು, ಹೋಮಗಳು ಮತ್ತು ಹಬ್ಬಗಳನ್ನು ಅನ್ವೇಷಿಸಿ.",
+      "upcomingEvents": "ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮಗಳು",
+      "date": "ದಿನಾಂಕ",
+      "time": "ಸಮಯ",
+      "duration": "ಅವಧಿ",
+      "location": "ಸ್ಥಳ",
+      "category": "ವರ್ಗ",
+      "details": "ಕಾರ್ಯಕ್ರಮ ವಿವರಣೆ"
+    },
+    "contact": {
+      "title": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+      "email": "ಇಮೇಲ್",
+      "phone": "ಫೋನ್",
+      "address": "ವಿಳಾಸ",
+      "newsletter": "ನ್ಯೂಸ್‌ಲೆಟರ್",
+      "subscribe": "ಸದಸ್ಯತೆ ಪಡೆಯಿರಿ",
+      "subscribeText": "ನವೀಕರಣಗಳು ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ಒಳನೋಟಗಳ ಜೆ ನಮ್ಮ ನ್ಯೂಸ್‌ಲೆಟರ್‌ಗೆ ಸದಸ್ಯತೆ ಪಡೆಯಿರಿ."
+    },
+    "footer": {
+      "copyright": "© 2015-2026 ಅವಿಮುಕ್ತ ದತ್ತ ಪಾದುಕ. ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿವೆ.",
+      "organization": "ಸದ್ಗುರು ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ರಾಮಾನಂದ ಸ್ವಾಮಿ ಆಶ್ರಮ ವಿಶ್ವಸ್ತ ಸಮಿತಿ (R)"
+    }
+  },
+  "te": {
+    "nav": {
+      "home": "హోమ్",
+      "guru": "గురు పరంపర",
+      "sevas": "సేవలు",
+      "activities": "కార్యకలాపాలు",
+      "gallery": "గ్యాలరీ",
+      "trust": "ట్రస్ట్",
+      "sthala": "స్థల పురాణం",
+      "events": "ఈవెంట్‌లు",
+      "contact": "మమ్మల్ని సంప్రదించండి"
+    },
+    "hero": {
+      "title": "శ్రీ అవిముక్త",
+      "subtitle": "దత్త క్షేత్రం",
+      "desc1": "శ్రీమద్ ఆదిగురు దత్తాత్రేయ పరంపరానుగత ప్రణవ పీఠ నిర్గుణ మహా సంస్థానం",
+      "desc2": "శ్రీమద్ దత్తాత్రేయ ఆశ్రమ ప్రార్థన మందిరం",
+      "desc3": "సద్గురు శ్రీ శ్రీ శ్రీ రామానంద స్వామి ఆశ్రమ విశ్వస్త సమితి ®",
+      "desc4": "చారిత్రక సప్తపురీ నగర లేదా నవసాల నగరీ – హోసకోటె",
+      "cta": "ఇప్పుడు స్క్రోల్ చేయండి"
+    },
+    "about": {
+      "title": "ఆశ్రమ గురించి",
+      "content": "శ్రీ అవిముక్త దత్త క్షేత్రం భగవాన్ దత్తాత్రేయ యొక్క శిక్షణలకు సమర్పించిన పవిత్ర ఆధ్యాత్మిక కేంద్రం. మా ఆశ్రమ ఆధ్యాత్మిక జ్ఞానం యొక్క దీపస్తంభం వలె కూడా, మోక్ష మార్గంపై సాధకులకు మార్గదర్శనం మరియు ఆశ్వాసన ఇస్తుంది."
+    },
+    "guru": {
+      "title": "గురు పరంపర",
+      "content": "గొప్ప గురువుల పరంపర తరతరాలుగా కొనసాగుతుంది, పవిత్ర శిక్షణలు మరియు ఆధ్యాత్మిక అభ్యాసాలను సంరక్షిస్తూ ఇవి మనలను విముక్తికి దిశగా నడిపిస్తాయి.",
+      "list": [
+        "Adi Guru Dathathtreya Prabhu",
+        "Sri Yogi Janaardhana Swamy",
+        "Sri Konera Guru Swamy",
+        "Sri Eko Guruvara Swamy",
+        "Sri Narahari Mahesha Swamy",
+        "Sri Nagoraama Swamy",
+        "Sri Mahadeva Guru Swamy",
+        "Sri Parashuraama Prabhu",
+        "Sri Dhenukonda Thimma Yogi",
+        "Sri Chintala Lingananda Swami",
+        "Sri Sahajananda Swami",
+        "Sri Mahalinga Rangaswamy",
+        "Sri Sankarananda Swami",
+        "Shri Govindarya Swamy",
+        "Sri Krishnananda Swami",
+        "Sri Ramananda Swami",
+        "Sri Madhavananda Swami",
+        "Sri Mathe Muktambicay Devi"
+      ]
+    },
+    "sevas": {
+      "title": "సేవలు",
+      "content": "మేము దైనిక పూజలు, హోమాలు మరియు ధ్యాన సెషన్‌లతో సహా వివిధ ఆధ్యాత్మిక సేవలను అందిస్తాము, ఇవి మా భక్తుల ఆధ్యాత్మిక వృద్ధిని సమర్థిస్తాయి.",
+      "list": [
+        "Sri Guru Puja on Purnima Day",
+        "Sri Dathathreya Homam",
+        "Sri Sadguru Pada Puja",
+        "Anna Prasada Seva",
+        "Pushpa Puja",
+        "Deeparadhana",
+        "Naivedhyam",
+        "Thulabharam",
+        "Rudrabhishekam",
+        "Pradosha puja",
+        "Sri Guru Charithra Grantha Parayana Samarpana",
+        "Avimuktha Datta Paaduka Puja",
+        "Avimuktha Datta Paaduka Abhishekam",
+        "Palaki Seva",
+        "Sri Kathaveeryarjuna Puja",
+        "Sri Karthaveeryarjuna Homam",
+        "Sri Avadhootaroopa Subrahmanya Swamy Puja",
+        "Sri Subrahmanya Homam",
+        "Sri Datta Sahasranama Paarayana",
+        "Sri Avadhootha Geetha Parayanam",
+        "Sri Oudumbara Vruksha Puja"
+      ]
+    },
+    "activities": {
+      "title": "కార్యకలాపాలు",
+      "content": "మా ఆశ్రమ ఆధ్యాత్మిక కార్యకలాపాలు, పండుగలు మరియు విద్యా కార్యక్రమాలను క్రమం తప్పకుండా నిర్వహిస్తుంది, ఇవి ఆధ్యాత్మిక వృద్ధి మరియు సమాజ సంబంధాన్ని ప్రోత్సహిస్తాయి.",
+      "list": [
+        "ANNADHAANAM",
+        "VIDHYADHAANAM",
+        "VASTRADHAANAM",
+        "AROGYADHAANAM",
+        "GNANADHAANAM",
+        "PRAKRUTHI VANDANAM",
+        "KAALAGNAANAM",
+        "GOURAVA PRADHAANAM"
+      ]
+    },
+    "gallery": {
+      "title": "గ్యాలరీ",
+      "content": "మా ఆశ్రమలో సంగ్రహించిన పవిత్ర ప్రదేశాలు మరియు ఆధ్యాత్మిక క్షణాలను అన్వేషించండి."
+    },
+    "trust": {
+      "title": "ట్రస్ట్",
+      "content": "పారదర్శకత మరియు భక్తి సూత్రాలపై నిర్మితమైన, మా ట్రస్ట్ అన్ని సాధకుల సంక్షేమం మరియు ఆధ్యాత్మిక ఉన్నతీకరణ కోసం పనిచేస్తుంది."
+    },
+    "sthala": {
+      "title": "స్థల పురాణం",
+      "content": "ఈ పవిత్ర ప్రదేశం యొక్క పవిత్ర చరిత్ర మరియు ప్రాముఖ్యత, ఆధ్యాత్మిక సంప్రదాయం మరియు దైవిక కృపలో నిమజ్జితమైనది."
+    },
+    "events": {
+      "title": "ఈవెంట్‌లు మరియు పండుగలు",
+      "content": "భగవాన్ దత్తాత్రేయ యొక్క దివ్య శిక్షణలు మరియు ఆధ్యాత్మిక ఆచరణలను జరుపుకునే మా వచ్చే పూజలు, హోమాలు మరియు పండుగలను అన్వేషించండి.",
+      "upcomingEvents": "వచ్చే ఈవెంట్‌లు",
+      "date": "తేదీ",
+      "time": "సమయం",
+      "duration": "వ్యవధి",
+      "location": "ప్రదేశం",
+      "category": "వర్గం",
+      "details": "ఈవెంట్ వివరాలు"
+    },
+    "contact": {
+      "title": "మమ్మల్ని సంప్రదించండి",
+      "email": "ఇమెయిల్",
+      "phone": "ఫోన్",
+      "address": "చిరునామా",
+      "newsletter": "వార్తాపత్రిక",
+      "subscribe": "సభ్యుడిగా చేరండి",
+      "subscribeText": "నవీకరణలు మరియు ఆధ్యాత్మిక అంతర్దృష్టుల కోసం మా వార్తాపత్రికకు సభ్యుడిగా చేరండి."
+    },
+    "footer": {
+      "copyright": "© 2015-2026 అవిముక్త దత్త పాదుక. అన్ని హక్కులు సంరక్షితమైనవి.",
+      "organization": "సద్గురు శ్రీ శ్రీ శ్రీ రామానంద స్వామి ఆశ్రమ విశ్వస్త సమితి (R)"
+    }
+  }
+}

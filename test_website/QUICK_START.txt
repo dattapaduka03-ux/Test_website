@@ -1,0 +1,154 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    ASHRAM WEBSITE - QUICK START GUIDE                      ║
+║                                                                            ║
+║  Avimuktha Datta Paaduka Ashram - Complete Website Package                ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📋 WHAT'S INCLUDED:
+  ✅ Complete React 19 + Tailwind CSS website
+  ✅ All 8 images (4.5 MB) - included locally
+  ✅ 4 languages: English, Hindi, Kannada, Telugu
+  ✅ 9 pages: Home, Guru, Sevas, Activities, Gallery, Trust, Sthala, Contact, Events
+  ✅ Responsive design for all devices
+  ✅ Smooth animations and interactive elements
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 QUICK START (3 STEPS):
+
+  1. EXTRACT THE ZIP FILE
+     → Unzip ashram_website_complete.zip to your desired location
+
+  2. OPEN IN VS CODE
+     → File → Open Folder → Select ashram_website folder
+     → Or: code ashram_website (in terminal)
+
+  3. INSTALL & RUN
+     → Open Terminal in VS Code (Ctrl + `)
+     → Type: pnpm install
+     → Type: pnpm run dev
+     → Open: http://localhost:3000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ SYSTEM REQUIREMENTS:
+  • Node.js v18 or higher (download from nodejs.org)
+  • VS Code (optional but recommended)
+  • 500 MB free disk space
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 PROJECT STRUCTURE:
+  ashram_website/
+  ├── client/
+  │   ├── public/images/          ← All 8 images (included)
+  │   └── src/
+  │       ├── pages/              ← Page components
+  │       ├── components/         ← UI components
+  │       ├── translations.json   ← 4 languages
+  │       └── index.css           ← Styles & colors
+  ├── package.json
+  ├── vite.config.ts
+  ├── SETUP_GUIDE.md              ← Detailed guide
+  └── QUICK_START.txt             ← This file
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌍 LANGUAGE SWITCHING:
+  Click the Globe (🌐) icon in top-right corner to switch between:
+  • English (EN)
+  • हिन्दी (Hindi)
+  • ಕನ್ನಡ (Kannada)
+  • తెలుగు (Telugu)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 COMMON COMMANDS:
+  pnpm run dev       → Start development server
+  pnpm run build     → Build for production
+  pnpm run preview   → Preview production build
+  pnpm run type-check → Check TypeScript errors
+
+  (Or use 'npm' instead of 'pnpm' if you prefer)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 CUSTOMIZATION:
+  • Edit content: client/src/pages/Home.tsx
+  • Edit translations: client/src/translations.json
+  • Edit colors: client/src/index.css
+  • Edit images: client/public/images/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ TROUBLESHOOTING:
+
+  Q: Images not showing?
+  A: Ensure all 8 images are in client/public/images/
+     Check that filenames match paths in Home.tsx
+
+  Q: "Port 3000 already in use"?
+  A: Vite will automatically use next available port
+     Check terminal for actual URL
+
+  Q: npm install fails?
+  A: Clear cache: npm cache clean --force
+     Then try again: npm install
+
+  Q: TypeScript errors?
+  A: Run: pnpm run type-check
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DETAILED DOCUMENTATION:
+  See SETUP_GUIDE.md for comprehensive documentation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ FEATURES:
+  ✅ Fully responsive (mobile, tablet, desktop)
+  ✅ All images included locally
+  ✅ 4-language support with instant switching
+  ✅ Smooth scroll animations
+  ✅ Interactive events calendar
+  ✅ Beautiful spiritual aesthetic
+  ✅ No external dependencies required
+  ✅ Production-ready code
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 PAGES AVAILABLE:
+  1. Home - Hero section with introduction
+  2. Guru Parampara - Spiritual lineage
+  3. Sevas - Services and practices
+  4. Activities - Community programs
+  5. Gallery - Photo gallery with 8 images
+  6. Trust - Trust information
+  7. Sthala Puranam - Sacred location details
+  8. Contact Us - Contact information
+  9. Events - Interactive events calendar
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 TECH STACK:
+  • React 19 - UI Framework
+  • Tailwind CSS 4 - Styling
+  • TypeScript - Type Safety
+  • Vite - Build Tool
+  • Wouter - Routing
+  • Lucide React - Icons
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📦 PACKAGE INFO:
+  Version: 1.0.0
+  Status: ✅ Fully Working
+  All Images: ✅ Included
+  All Dependencies: ✅ Configured
+  Ready to Run: ✅ Yes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Happy coding! 🙏
+
+For more help, see SETUP_GUIDE.md

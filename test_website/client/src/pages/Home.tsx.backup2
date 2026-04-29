@@ -1,0 +1,857 @@
+import { Button } from "@/components/ui/button";
+import translations from "@/translations.json";
+import { Card } from "@/components/ui/card";
+import { Mail, Phone, MapPin, Facebook, Youtube, Send, MessageCircle, Heart, Menu, X, Globe } from "lucide-react";
+import { useState, useMemo } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+/**
+ * Vedic Minimalism Design System
+ * - Primary: Deep Orange (#ff901c) to Golden Yellow (#ffc61d) - spiritual fire and transformation
+ * - Accent: Gold (#D4AF37) - divinity and enlightenment
+ * - Background: Cream (#F5E6D3) - meditative space
+ * - Typography: Playfair Display (headings), Lora (body), Crimson Text (quotes)
+ * - Spacing: Generous whitespace creating meditative pauses
+ */
+
+export default function Home() {
+  const [currentPage, setCurrentPage] = useState("home");
+  const [showDonateForm, setShowDonateForm] = useState(false);
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
+  
+  // Helper function to get translated arrays
+  const getTranslatedArray = (path: string): string[] => {
+    const keys = path.split('.');
+    let current: any = translations[language];
+    for (const key of keys) {
+      if (current && typeof current === 'object' && key in current) {
+        current = current[key];
+      } else {
+        return [];
+      }
+    }
+    return Array.isArray(current) ? current : [];
+  };
+
+  // Navigation handler
+  const navigate = (page: string) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Page-specific hero images
+  const heroImages: Record<string, string> = {
+    guru: "/images/hero-guru.jpg",
+    sevas: "/images/hero-sevas.jpg",
+    activities: "/images/hero-activities.jpg",
+    trust: "/images/hero-trust.jpg",
+    sthala: "/images/hero-sthala.jpg",
+    contact: "/images/hero-contact.jpg",
+  };
+
+  // Gallery images
+  const galleryImages = [
+    "/images/hero-guru.jpg",
+    "/images/hero-sevas.jpg",
+    "/images/hero-activities.jpg",
+    "/images/hero-trust.jpg",
+    "/images/hero-sthala.jpg",
+    "/images/hero-contact.jpg",
+    "/images/gallery-7.jpg",
+    "/images/gallery-8.jpg",
+  ];
+
+  const navigationItems = useMemo(() => [
+    { id: "home", label: t('nav.home') },
+    { id: "guru", label: t('nav.guru') },
+    { id: "sevas", label: t('nav.sevas') },
+    { id: "activities", label: t('nav.activities') },
+    { id: "gallery", label: t('nav.gallery') },
+    { id: "trust", label: t('nav.trust') },
+    { id: "sthala", label: t('nav.sthala') },
+    { id: "contact", label: t('nav.contact') },
+  ], [t, language]);
+
+  // Header Navigation
+  const Header = () => (
+    <header className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="container mx-auto px-4 py-3">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center gap-2 sm:gap-4 cursor-pointer" onClick={() => navigate("home")}>
+            <img 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663437777193/jviz57jALUmVLVWV8gxDYY/Screenshot2026-04-12at9.24.40AM_86196d0b.png" 
+              alt="Avimuktha Datta Paaduka Logo" 
+              className="w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 object-contain"
+            />
+            <div>
+              <h1 className="text-lg sm:text-xl font-bold text-primary">Avimuktha</h1>
+              <p className="text-xs sm:text-sm text-muted-foreground">Datta Paaduka</p>
+            </div>
+          </div>
+
+          {/* Navigation Menu - Desktop */}
+          <nav className="hidden lg:flex gap-2 xl:gap-4">
+            {navigationItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => navigate(item.id)}
+                className={`text-sm font-medium transition-colors ${
+                  currentPage === item.id
+                    ? "text-primary border-b-2 border-primary"
+                    : "text-foreground hover:text-primary"
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </nav>
+
+          {/* CTA Buttons & Hamburger */}
+          <div className="flex items-center gap-3">
+            {/* Language Switcher */}
+            <div className="relative">
+              <button
+                onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium text-primary hover:bg-gray-100 transition-colors"
+              >
+                <Globe className="w-5 h-5" />
+                <span className="hidden sm:inline">{language.toUpperCase()}</span>
+              </button>
+              
+              {languageMenuOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 z-50">
+                  <button
+                    onClick={() => { setLanguage('en'); setLanguageMenuOpen(false); }}
+                    className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${language === 'en' ? 'bg-primary text-white' : ''}`}
+                  >
+                    English
+                  </button>
+                  <button
+                    onClick={() => { setLanguage('hi'); setLanguageMenuOpen(false); }}
+                    className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${language === 'hi' ? 'bg-primary text-white' : ''}`}
+                  >
+                    हिन्दी (Hindi)
+                  </button>
+                  <button
+                    onClick={() => { setLanguage('kn'); setLanguageMenuOpen(false); }}
+                    className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${language === 'kn' ? 'bg-primary text-white' : ''}`}
+                  >
+                    ಕನ್ನಡ (Kannada)
+                  </button>
+                  <button
+                    onClick={() => { setLanguage('te'); setLanguageMenuOpen(false); }}
+                    className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${language === 'te' ? 'bg-primary text-white' : ''}`}
+                  >
+                    తెలుగు (Telugu)
+                  </button>
+                </div>
+              )}
+            </div>
+            
+            {/* Hamburger Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 text-primary" />
+              ) : (
+                <Menu className="w-6 h-6 text-primary" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        {mobileMenuOpen && (
+          <nav className="lg:hidden mt-4 pb-4 border-t border-gray-200">
+            <div className="flex flex-col gap-2">
+              {navigationItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => {
+                    navigate(item.id);
+                    setMobileMenuOpen(false);
+                  }}
+                  className={`text-left px-4 py-2 rounded-lg transition-colors ${
+                    currentPage === item.id
+                      ? "bg-primary text-white font-medium"
+                      : "text-foreground hover:bg-gray-100"
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+
+            </div>
+          </nav>
+        )}
+      </div>
+    </header>
+  );
+
+  // Home Page
+  const HomePage = () => (
+    <>
+      {/* Hero Section */}
+      <section
+        className="relative min-h-screen sm:h-screen flex items-center justify-center text-center overflow-hidden"
+        style={{
+          backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663437777193/jviz57jALUmVLVWV8gxDYY/hero_gateway_flowers_final_dattatreya_9ce06c58.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative z-10 max-w-2xl mx-auto px-4 py-12 sm:py-0">
+          <p className="text-white text-sm sm:text-lg mb-4 font-light tracking-widest" style={{fontSize: '25px', fontWeight: '900', paddingTop: '50px'}}>Sri Avimuktha</p>
+          <h1 className="text-3xl sm:text-5xl md:text-7xl text-white mb-6 font-bold leading-tight">DATTA KSHETRAM</h1>
+          <div className="space-y-2 sm:space-y-3 text-white/90 mb-8 text-xs sm:text-base md:text-lg">
+            <p>Srimad Adiguru Dattatreya Paramparanugatha Pranava Peeta Nirguna Maha Samsthanam</p>
+            <p>Srimad Dattatreya Ashrama Prarthana Mandiram</p>
+            <p>Sadguru Sree Sree Sree Ramananda Swamy Ashrama Vishwastha Samithi ®</p>
+            <p>Historical Saptapuri Nagara or Navasaala Nagari – Hosakote</p>
+          </div>
+          <Button
+            size="lg"
+            className="bg-white text-primary hover:shadow-lg font-bold shine-effect"
+            onClick={() => navigate("contact")}
+          >
+            CONTACT NOW
+          </Button>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-12 sm:py-20 bg-background spiritual-section">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary leading-tight mb-8">
+            SADGURU SREE SREE SREE RAMANANDA SWAMY<br className="hidden sm:block" />ASHRAMA VISHWASTA SAMITHI (R)
+          </h2>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-foreground leading-relaxed mb-6">
+              Earlier on 26.06.1979, under the Presidentship of the 16th Sadguru of the Pranava Peetam, Sadguru Sri Sri Sri Raamaananda Swamy the trust called Srimad Dathathreya Ashrama was founded, which was not registered legally until 1990.
+            </p>
+            <p className="text-base sm:text-lg text-foreground leading-relaxed mb-6">
+              On 07.02.1990, the trust was registered under the Presidentship of Sadguru Sri Sri Sri Raamaananda Swamy and other eight voluntary devotees. On the demise of the President of the trust and other members of the trust, as per the will of Sadguru Sri Sri Sri Raamaananda Swamy the remaining devotees unanimously resolved to wind up the said trust to reform a new trust called SADGURU SREE SREE SREE RAMANANDA SWAMY ASHRAMA VISHWASTA SAMITHI (R).
+            </p>
+            <p className="text-base sm:text-lg text-foreground leading-relaxed">
+              This managing Trust maintains the Ashram and controls other activities of the Ashram. It conducts conventions and activities on philosophical, Religious and spiritual subjects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-12 sm:py-16 gradient-primary-shiny text-white text-center">
+        <div className="container mx-auto px-4">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-6">Support Our Sacred Mission</h3>
+          <p className="text-base sm:text-lg mb-8 max-w-2xl mx-auto">
+            Make a generous donation to help us preserve our rich cultural heritage and continue our spiritual services.
+          </p>
+          <Button
+            size="lg"
+            className="bg-white text-primary hover:shadow-lg font-bold shine-effect"
+            onClick={() => setShowDonateForm(!showDonateForm)}
+          >
+            <Heart className="w-5 h-5 mr-2" />
+            DONATE NOW
+          </Button>
+        </div>
+      </section>
+    </>
+  );
+
+  // Guru Parampara Page
+  const GuruPage = () => (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section
+        className="relative h-48 sm:h-64 md:h-80 flex items-center justify-center text-center overflow-hidden"
+        style={{
+          backgroundImage: `url('${heroImages.guru}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 px-4 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">Guru Parampara</h1>
+          <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
+        </div>
+      </section>
+
+      <div className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto mb-12">
+            <p className="text-lg text-foreground leading-relaxed mb-8">
+              Pranava Peetam, the Sanathana Sadguru Peetam was started by Adiguru Sri Sri Sri Dathathreya Prabhu and till now came across 18 Sadgurus in this Guru Parampara Lineage.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
+            {(getTranslatedArray("guru.list")).map((guru, idx) => (
+              <Card key={idx} className="p-6 bg-white border-l-4 border-primary hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="text-2xl font-bold text-primary">ॐ</div>
+                  <p className="text-lg font-semibold text-foreground">{guru}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // Sevas Page
+  const SevasPage = () => (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section
+        className="relative h-48 sm:h-64 md:h-80 flex items-center justify-center text-center overflow-hidden"
+        style={{
+          backgroundImage: `url('${heroImages.sevas}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">{t('sevas.title')}</h1>
+          <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
+        </div>
+      </section>
+
+      <div className="py-20">
+        <div className="container mx-auto px-4">
+          <p className="text-lg text-center text-foreground mb-12 max-w-2xl mx-auto">
+            {t('sevas.content')}
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
+            {(getTranslatedArray("sevas.list")).map((seva, idx) => (
+              <Card key={idx} className="p-6 bg-white border-t-4 border-primary hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-primary font-bold text-xl">✦</span>
+                  <p className="text-lg font-semibold text-foreground">{seva}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // Gallery Page
+  const GalleryPage = () => (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="relative h-48 sm:h-64 md:h-80 flex items-center justify-center text-center overflow-hidden bg-gradient-to-r from-primary/20 to-accent/20">
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-primary mb-4">{t('gallery.title')}</h1>
+          <div className="w-24 h-1 bg-accent mx-auto"></div>
+        </div>
+      </section>
+
+      {/* Gallery Grid */}
+      <div className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
+            {galleryImages.map((image, idx) => (
+              <div
+                key={idx}
+                onClick={() => setSelectedGalleryImage(image)}
+                className="group relative overflow-hidden rounded-lg cursor-pointer h-48 sm:h-64 shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <img
+                  src={image}
+                  alt={`Gallery ${idx + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://via.placeholder.com/400x300?text=Gallery+Image";
+                  }}
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                  <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="font-semibold text-lg">View</p>
+                  </div>
+                </div>
+                <div className="absolute inset-0 border-4 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Lightbox */}
+      {selectedGalleryImage && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-4xl">
+            <button
+              onClick={() => setSelectedGalleryImage(null)}
+              className="absolute -top-12 right-0 text-white hover:text-accent transition-colors text-2xl"
+            >
+              ✕
+            </button>
+            <img
+              src={selectedGalleryImage}
+              alt="Gallery Full View"
+              className="w-full h-auto max-h-[60vh] sm:max-h-[70vh] object-contain rounded-lg"
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
+  // Activities Page
+  const ActivitiesPage = () => (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section
+        className="relative h-48 sm:h-64 md:h-80 flex items-center justify-center text-center overflow-hidden"
+        style={{
+          backgroundImage: `url('${heroImages.activities}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">{t('activities.title')}</h1>
+          <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
+        </div>
+      </section>
+
+      <div className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                title: "ANNADHAANAM",
+                description:
+                  "Daily food is provided freely to the visitors. On the Day of Purnima, every month after Guru Puja thousands of devotees will have food as Anna Prasadam at our Ashram.",
+              },
+              {
+                title: "VIDHYADHAANAM",
+                description:
+                  "Every year text books, note books, school bags and other student stationaries are distributed to the poor and eligible students. Scholarships are also provided to the deserved hard working students.",
+              },
+              {
+                title: "VASTRADHAANAM",
+                description:
+                  "Clothes and bedsheets are distributed to the poor and needy during special occasions like Guru Aaradhana and Jayanthotsavam.",
+              },
+              {
+                title: "AROGYADHAANAM",
+                description:
+                  "Free and special medical camps are conducted regularly at our Ashram, which can be availed by anyone in the society. Free medicines are also provided to the deserved poor patients.",
+              },
+              {
+                title: "GNANADHAANAM",
+                description:
+                  "Books related to spirituality, history, traditions, human values, ethics, puranas, meditation, ayurveda, yoga and other Sanathana literatures are published and distributed freely.",
+              },
+              {
+                title: "PRAKRUTHI VANDANAM",
+                description:
+                  "Campaigns and workshops are conducted regarding environmental pollutions, rain water harvesting, importance of forests, plantation of trees, and preserving endangered species.",
+              },
+              {
+                title: "KAALAGNAANAM",
+                description: "New year calendars containing Panchangam are distributed freely to the devotees every year.",
+              },
+              {
+                title: "GOURAVA PRADHAANAM",
+                description:
+                  "Facilitations have been done and awards have been given to the achievers in different fields during special occasions.",
+              },
+            ].map((activity, idx) => (
+              <Card key={idx} className="p-6 sm:p-8 bg-white hover:shadow-lg transition-shadow">
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4">{activity.title}</h3>
+                <p className="text-sm sm:text-base text-foreground leading-relaxed">{activity.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // Trust Page
+  const TrustPage = () => (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section
+        className="relative h-48 sm:h-64 md:h-80 flex items-center justify-center text-center overflow-hidden"
+        style={{
+          backgroundImage: `url('${heroImages.trust}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">{t('trust.title')}</h1>
+          <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
+        </div>
+      </section>
+
+      <div className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <Card className="p-6 sm:p-12 bg-white mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-8">
+                SADGURU SREE SREE SREE RAMANANDA SWAMY ASHRAMA VISHWASTA SAMITHI (R)
+              </h2>
+
+              <div className="space-y-4 sm:space-y-6 text-sm sm:text-base text-foreground leading-relaxed">
+                <p>
+                  Earlier on 26.06.1979, under the Presidentship of the 16th Sadguru of the Pranava Peetam, Sadguru Sri Sri Sri Raamaananda Swamy the trust called Srimad Dathathreya Ashrama was founded, which was not registered legally until 1990.
+                </p>
+
+                <p>
+                  On 07.02.1990, the trust was registered under the Presidentship of Sadguru Sri Sri Sri Raamaananda Swamy and other eight voluntary devotees. On the demise of the President of the trust and other members of the trust, as per the will of Sadguru Sri Sri Sri Raamaananda Swamy the remaining devotees unanimously resolved to wind up the said trust to reform a new trust called SADGURU SREE SREE SREE RAMANANDA SWAMY ASHRAMA VISHWASTA SAMITHI (R).
+                </p>
+
+                <p>
+                  As a result, on 02.03.2015, a new Trust called Sadguru Sree Sree Sree Ramananda Swamy Ashrama Vishwasta Samithi (R) has been formed and registered under the Presidentship of the 18th Sadguru of Pranava Peeta Guru Parampara, Sadguru Sri Maathe Mukthaambkie Devi and other 15 Voluntary Devotees. The Trust is registered under 80G and 12AA acts of INCOME TAX DEPARTMENT of GOVERNMENT OF BHARATH.
+                </p>
+
+                <p>
+                  This managing Trust maintains the Ashram and controls other activities of the Ashram. It conducts conventions and activities on philosophical, religious and spiritual subjects. It also extends helping hand to the needy by distributing books and scholarships to the students and medicines to the suffering poor patients.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // Sthala Puranam Page
+  const SthalaPage = () => (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section
+        className="relative h-48 sm:h-64 md:h-80 flex items-center justify-center text-center overflow-hidden"
+        style={{
+          backgroundImage: `url('${heroImages.sthala}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">{t('sthala.title')}</h1>
+          <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
+        </div>
+      </section>
+
+      <div className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <Card className="p-6 sm:p-12 bg-white">
+              <div className="space-y-4 sm:space-y-6 text-sm sm:text-base text-foreground leading-relaxed">
+                <p>
+                  Avimuktha data Kshetram is the sacred place where daily worship is done to the 2000 years old Rathnagarbha, Navapaashanayuktha, Srichakraankitha Avimuktha Datta Lingam, in which Dattatreya Muthy is engraved in front of the shiva lingam attached to it. On top of this Lingam later Srichakram is encarved by Sri Adi Shankaraachaarya.
+                </p>
+
+                <p>
+                  This is the Holy place where world's one and only one self luminous celestial Vrushabhaarooda Spatika Datta Atma Lingam is worshipped, which is an eternal gift blessed by Lord Guru Datta to the same NANDA MAHARAJA of Pandava clan.
+                </p>
+
+                <p>
+                  This Holy place is called as AVIMUKTHA DATTA KSHETRAM, where the AVIMUKTHA DATTA PAADUKAS, the real PAADA MUDRAAS of Lord Dattatreya is worshipped daily.
+                </p>
+
+                <p>
+                  This place is also called as DATTAAVADHOOTA KSHETRAM where ADIGURU SRI DATTATREYA SWAMY preached the AVADHOOTHA GEETHA to the GNANA SHAKTHI SWAMYNAATHA SRI SUBRAHMANYESHWARA in the form of AVADHOOTA.
+                </p>
+
+                <p>
+                  It is also called as DHAATHRIVANA KSHETRAM, where Lord ADIGURU DATTATREYA appeared in Surya Mandala and preached SRI DATTA SAHASRANAAMAM to SRI ADI SHANKARAACHAARYA.
+                </p>
+
+                <p>
+                  This is the most blessed holy place of Datta Parampara where Lord Guru Dattatreya granted the salvation to Nanda Maharaja of Pandava's clan. This is spiritually inclined SIDDHA KSHETRAM visited by NAVNAATH even today in the sookshma roopam. It is called as NAVAVATA KSHETRAM, due to nine divine trees representing NAVNAATH which are situated on the east bank of the river Dakshina Pinakini.
+                </p>
+
+                <p>
+                  This is the divine Theertha Kshetram where 16th Sadguru of Pranava Peetam of Adiguru Dattatreya Parampara, Sadguru Sri Sri Sri RAAMAANADA SWAMY took Samadhi having live darshan of the Lord Guru Datta. Even today from his Samadhi Adhishtaana itself he is blessing the visiting devotees.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // Contact Page
+  const ContactPage = () => (
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section
+        className="relative h-48 sm:h-64 md:h-80 flex items-center justify-center text-center overflow-hidden"
+        style={{
+          backgroundImage: `url('${heroImages.contact}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white">{t('contact.title')}</h1>
+          <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
+        </div>
+      </section>
+
+      <div className="py-12 sm:py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto mb-16">
+            {/* Contact Form */}
+            <Card className="p-6 sm:p-8 bg-white">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-6">Send Us A Message</h3>
+              <form className="space-y-3 sm:space-y-4">
+                <div>
+                  <label className="block text-xs sm:text-sm font-medium text-foreground mb-2">Name</label>
+                  <input
+                    type="text"
+                    className="w-full px-3 sm:px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">Gothram</label>
+                  <input
+                    type="text"
+                    className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Your gothram"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">Email</label>
+                  <input
+                    type="email"
+                    className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Your email"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">WhatsApp Number</label>
+                  <input
+                    type="tel"
+                    className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    placeholder="Your WhatsApp number"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">Message</label>
+                  <textarea
+                    className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    rows={4}
+                    placeholder="Your message"
+                  />
+                </div>
+                <Button className="w-full gradient-primary text-white hover:shadow-lg shine-effect font-bold">Send</Button>
+              </form>
+            </Card>
+
+            {/* Contact Information */}
+            <div className="space-y-6 sm:space-y-8">
+              <Card className="p-6 sm:p-8 bg-white">
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-6">Contact Information</h3>
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <Mail className="w-5 sm:w-6 h-5 sm:h-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-semibold text-sm sm:text-base text-foreground">Email</p>
+                      <a href="mailto:pranava.peetam@gmail.com" className="text-primary hover:underline">
+                        pranava.peetam@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-semibold text-foreground">Phone</p>
+                      <div className="space-y-1">
+                        {["+91 9535343000", "+91 9945363961", "+91 9690009393", "+91 9620000515"].map((phone) => (
+                          <a key={phone} href={`tel:${phone}`} className="block text-primary hover:underline">
+                            {phone}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-semibold text-foreground">Address</p>
+                      <p className="text-foreground">
+                        Cross, Sir.M.V. Extension, Hosakote, Bangalore Rural District, Karnataka. Pincode - 562114, INDIA
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Social Links */}
+              <Card className="p-6 sm:p-8 bg-white">
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-6">Follow Us</h3>
+                <div className="flex gap-3 sm:gap-4 flex-wrap">
+                  {[
+                    { icon: Facebook, label: "Facebook" },
+                    { icon: Youtube, label: "YouTube" },
+                    { icon: Send, label: "Telegram" },
+                    { icon: MessageCircle, label: "WhatsApp" },
+                  ].map(({ icon: Icon, label }) => (
+                    <a
+                      key={label}
+                      href="#"
+                      className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary/90 transition-colors"
+                      title={label}
+                    >
+                      <Icon className="w-6 h-6" />
+                    </a>
+                  ))}
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  // Footer
+  const Footer = () => (
+    <footer className="gradient-primary-shiny text-white py-8 sm:py-12">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
+          <div>
+            <h4 className="font-bold text-sm sm:text-base mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-xs sm:text-sm">
+              {navigationItems.map((item) => (
+                <li key={item.id}>
+                  <button onClick={() => navigate(item.id)} className="hover:text-accent transition-colors">
+                    {item.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold mb-4">Services</h4>
+            <ul className="space-y-2 text-sm">
+              {["Pujas", "Homams", "Spiritual Guidance", "Donations", "Events"].map((service) => (
+                <li key={service}>
+                  <a href="#" className="hover:text-accent transition-colors">
+                    {service}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold mb-4">About</h4>
+            <ul className="space-y-2 text-sm">
+              {["History", "Ashram", "Trust Info", "Guru Lineage"].map((item) => (
+                <li key={item}>
+                  <a href="#" className="hover:text-accent transition-colors">
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold mb-4">Newsletter</h4>
+            <p className="text-sm mb-4">Subscribe to our newsletter for updates and spiritual insights.</p>
+            <input
+              type="email"
+              placeholder="Your email"
+              className="w-full px-3 py-2 rounded text-foreground text-sm mb-2"
+            />
+            <Button className="w-full bg-white text-primary hover:shadow-lg text-sm font-bold border-2 border-white">Subscribe</Button>
+          </div>
+        </div>
+
+        <div className="border-t border-white/20 pt-6 sm:pt-8 text-center text-xs sm:text-sm">
+          <p>&copy; 2015-2026 AVIMUKTHA DATTA PAADUKA. All Rights Reserved.</p>
+          <p className="mt-2">Sadguru Sree Sree Sree Ramananda Swamy Ashrama Vishwasta Samithi (R)</p>
+        </div>
+      </div>
+    </footer>
+  );
+
+  // Render current page
+  const renderPage = () => {
+    switch (currentPage) {
+      case "guru":
+        return <GuruPage />;
+      case "sevas":
+        return <SevasPage />;
+      case "activities":
+        return <ActivitiesPage />;
+      case "gallery":
+        return <GalleryPage />;
+      case "trust":
+        return <TrustPage />;
+      case "sthala":
+        return <SthalaPage />;
+      case "contact":
+        return <ContactPage />;
+      default:
+        return <HomePage />;
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1">{renderPage()}</main>
+      <Footer />
+
+      {/* Donate Modal */}
+      {showDonateForm && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <Card className="w-full max-w-md p-6 sm:p-8 bg-white">
+            <h2 className="text-xl sm:text-2xl font-bold text-primary mb-6">Make a Donation</h2>
+            <p className="text-sm sm:text-base text-foreground mb-6">
+              Your generous donation helps us preserve our spiritual heritage and serve the community.
+            </p>
+            <div className="space-y-4 mb-6">
+              {[100, 500, 1000, 5000].map((amount) => (
+                <Button
+                  key={amount}
+                  className="w-full gradient-primary text-white hover:shadow-lg shine-effect font-bold"
+                >
+                  ₹{amount}
+                </Button>
+              ))}
+            </div>
+            <Button
+              className="w-full gradient-primary text-white hover:shadow-lg shine-effect font-bold mb-4"
+            >
+              Custom Amount
+            </Button>
+            <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10" onClick={() => setShowDonateForm(false)}>
+              Close
+            </Button>
+          </Card>
+        </div>
+      )}
+    </div>
+  );
+}
